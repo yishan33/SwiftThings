@@ -53,6 +53,7 @@
     uint count;
     objc_property_t *properties = class_copyPropertyList([self class], &count);
     NSMutableString *descriptionString = [NSMutableString new];
+    
     //循环并用KVC得到每个属性的值
     for (int i = 0; i < count; i++) {
         objc_property_t property = properties[i];

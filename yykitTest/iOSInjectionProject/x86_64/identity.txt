@@ -1,0 +1,2 @@
+/Users/lfs/Library/Developer/Xcode/DerivedData/yykitTest-azmxkpnmpnlrnidjxqkahxttepzz/Build/Products/Debug-iphonesimulator/yykitTest.app
+-

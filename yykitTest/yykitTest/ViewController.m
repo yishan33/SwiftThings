@@ -58,6 +58,8 @@ typedef void (^taskEndBLock)();
 
 @property (nonatomic, copy) taskEndBLock endBlock;
 
+@property (nonatomic, strong) UIButton *testButton;
+
 @end
 
 @implementation ViewController
@@ -72,7 +74,32 @@ typedef void (^taskEndBLock)();
 //    self.automaticallyAdjustsScrollViewInsets = NO;
 //    [self loadCollectionView];
     
-    [self testDescription];
+//    [self testDescription];
+    [self testInject];
+}
+
+
+- (void)injected {
+    [self viewDidLoad];
+}
+
+
+- (void)testInject {
+    if (!_testButton) {
+        _testButton = [UIButton new];
+        [_testButton setTitle:@"增加xxxxx" forState:UIControlStateNormal];
+        [_testButton addTarget:self action:@selector(addEvent:) forControlEvents:UIControlEventTouchUpInside];
+        _testButton.backgroundColor = [UIColor purpleColor];
+        [self.view addSubview:_testButton];
+ 
+    }
+    
+    [_testButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(100 / 2);
+        make.top.mas_equalTo(100 / 2);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(100);
+    }];
 
 }
 
@@ -84,6 +111,7 @@ typedef void (^taskEndBLock)();
     testModel.array = @[testModel.dic, testModel.dic];
     testModel.phoneNumber = @"111111";
     testModel.testNum = 1;
+    testModel.isStudent = NO;
 
     ClassModel *classOne = [[ClassModel alloc] init];
     classOne.name = @"1班";
@@ -209,7 +237,7 @@ typedef void (^taskEndBLock)();
     [backStackView addArrangedSubview:_firstImageView];
     
     _secondImageView = [UIImageView new];
-    _secondImageView.backgroundColor = UIColor.orangeColor;
+    _secondImageView.backgroundColor = UIColor.blueColor;
     [backStackView addArrangedSubview:_secondImageView];
     
     _thirdImageView = [UIImageView new];
@@ -232,11 +260,11 @@ typedef void (^taskEndBLock)();
     }];
     
     [_thirdImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(imageWidth, imageHeight));
+        make.size.mas_equalTo(CGSizeMake(imageWidth , imageHeight));
     }];
     
     [_forthImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(imageWidth, imageHeight));
+        make.size.mas_equalTo(CGSizeMake(imageWidth , imageHeight));
     }];
 }
 

@@ -18,6 +18,6 @@ extern NSString * const ArGiftNotify;
 @property (nonatomic, strong) NSArray *array;
 @property (nonatomic, copy) NSString *phoneNumber;
 @property (nonatomic, assign) int testNum;
-
+@property (nonatomic, assign) BOOL isStudent;
 
 @end
