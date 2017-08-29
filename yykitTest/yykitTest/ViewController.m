@@ -20,6 +20,7 @@
 #import <objc/runtime.h>
 #import "SVProgressHUD.h"
 #import "SmartQueueManager.h"
+#import "NSObject+Description.h"
 
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
@@ -70,7 +71,25 @@ typedef void (^taskEndBLock)();
 //    self.automaticallyAdjustsScrollViewInsets = NO;
 //    [self loadCollectionView];
     
+    [self testDescription];
 
+}
+
+#pragma mark - DescriptionTest 
+- (void)testDescription {
+    cardModel *testModel = [[cardModel alloc] init];
+    testModel.name = @"lfs";
+    testModel.dic = @{@"hight":@"188", @"money":@"11111"};
+    testModel.array = @[testModel.dic, testModel.dic];
+    testModel.phoneNumber = @"15928580431";
+    testModel.testNum = 1;
+
+    NSLog(@"lfs_test: cardModel:%@", [testModel detailDescription]);
+}
+
+#pragma mark - SmartQueueManager
+- (void)testSmartQueue {
+    
     UIButton *addEventButton = [UIButton new];
     [addEventButton setTitle:@"增加事件" forState:UIControlStateNormal];
     [addEventButton addTarget:self action:@selector(addEvent:) forControlEvents:UIControlEventTouchUpInside];

@@ -17,6 +17,7 @@ extern NSString * const ArGiftNotify;
 @property (nonatomic, strong) NSDictionary *dic;
 @property (nonatomic, strong) NSArray *array;
 @property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, assign) int testNum;
 
 
 @end
