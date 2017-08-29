@@ -25,7 +25,6 @@
     return string;
 }
 
-
 - (NSString*)arrayString:(NSArray *)array {
     
     NSMutableString *string = [[NSMutableString alloc] init];
@@ -49,8 +48,7 @@
     return string;
 }
 
-
-- (NSString *)detailDescription {
+- (NSString *)FSDetailDescription {
     
     uint count;
     objc_property_t *properties = class_copyPropertyList([self class], &count);
@@ -76,11 +74,6 @@
     }
 
     return descriptionString;
-}
-
-
-- (NSString *)description {
-    return [self detailDescription];
 }
 
 @end

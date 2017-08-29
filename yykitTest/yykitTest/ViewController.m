@@ -20,7 +20,8 @@
 #import <objc/runtime.h>
 #import "SVProgressHUD.h"
 #import "SmartQueueManager.h"
-#import "NSObject+Description.h"
+#import "ClassModel.h"
+
 
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
@@ -81,10 +82,16 @@ typedef void (^taskEndBLock)();
     testModel.name = @"lfs";
     testModel.dic = @{@"hight":@"188", @"money":@"11111"};
     testModel.array = @[testModel.dic, testModel.dic];
-    testModel.phoneNumber = @"15928580431";
+    testModel.phoneNumber = @"111111";
     testModel.testNum = 1;
 
-    NSLog(@"lfs_test: cardModel:%@", [testModel detailDescription]);
+    ClassModel *classOne = [[ClassModel alloc] init];
+    classOne.name = @"1班";
+    classOne.teachersArray = @[@"John", @"Lucy"];
+    
+    NSLog(@"lfs_test: classOne: %@", classOne);
+    NSLog(@"lfs_test: cardModel:%@", testModel);
+
 }
 
 #pragma mark - SmartQueueManager

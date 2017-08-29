@@ -10,4 +10,8 @@
 
 @interface ClassModel : NSObject
 
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSNumber *studentNum;
+@property (nonatomic, strong) NSArray *teachersArray;
+
 @end

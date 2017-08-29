@@ -10,6 +10,6 @@
 
 @interface NSObject (Description)
 
-- (NSString *)detailDescription;
+- (NSString *)FSDetailDescription;
 
 @end

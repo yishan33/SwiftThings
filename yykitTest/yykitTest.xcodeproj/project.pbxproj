@@ -12,7 +12,8 @@
 		E331BB211F1EE12C0004B0D1 /* HotGiftGuideModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = E331BB201F1EE12C0004B0D1 /* HotGiftGuideModelView.m */; };
 		E331BB291F1EFA030004B0D1 /* channel_share_guide_finger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E331BB281F1EFA030004B0D1 /* channel_share_guide_finger@2x.png */; };
 		E35B978E1F4D895400D59FE6 /* SmartQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E35B978D1F4D895400D59FE6 /* SmartQueueManager.m */; };
-		E35C367B1F550E40005CC17C /* NSObject+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = E35C367A1F550E40005CC17C /* NSObject+Description.m */; };
+		E35C367E1F55465A005CC17C /* NSObject+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = E35C367D1F55465A005CC17C /* NSObject+Description.m */; };
+		E35C36811F554697005CC17C /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E35C36801F554697005CC17C /* ClassModel.m */; };
 		E3C07FD11F17A1D50073B723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C07FD01F17A1D50073B723 /* main.m */; };
 		E3C07FD41F17A1D50073B723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C07FD31F17A1D50073B723 /* AppDelegate.m */; };
 		E3C07FD71F17A1D50073B723 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C07FD61F17A1D50073B723 /* ViewController.m */; };
@@ -58,8 +59,10 @@
 		E331BB281F1EFA030004B0D1 /* channel_share_guide_finger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_share_guide_finger@2x.png"; sourceTree = "<group>"; };
 		E35B978C1F4D895400D59FE6 /* SmartQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartQueueManager.h; sourceTree = "<group>"; };
 		E35B978D1F4D895400D59FE6 /* SmartQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartQueueManager.m; sourceTree = "<group>"; };
-		E35C36791F550E40005CC17C /* NSObject+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Description.h"; sourceTree = "<group>"; };
-		E35C367A1F550E40005CC17C /* NSObject+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Description.m"; sourceTree = "<group>"; };
+		E35C367C1F55465A005CC17C /* NSObject+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Description.h"; sourceTree = "<group>"; };
+		E35C367D1F55465A005CC17C /* NSObject+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Description.m"; sourceTree = "<group>"; };
+		E35C367F1F554697005CC17C /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		E35C36801F554697005CC17C /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
 		E3C07FCC1F17A1D50073B723 /* yykitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yykitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C07FD01F17A1D50073B723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3C07FD21F17A1D50073B723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 		E3C07FCE1F17A1D50073B723 /* yykitTest */ = {
 			isa = PBXGroup;
 			children = (
+				E35C367C1F55465A005CC17C /* NSObject+Description.h */,
+				E35C367D1F55465A005CC17C /* NSObject+Description.m */,
 				E386DEA91F21A9A2008C2458 /* GuideView */,
 				E3C07FD21F17A1D50073B723 /* AppDelegate.h */,
 				E3C07FD31F17A1D50073B723 /* AppDelegate.m */,
@@ -173,10 +178,10 @@
 				E35B978C1F4D895400D59FE6 /* SmartQueueManager.h */,
 				E35B978D1F4D895400D59FE6 /* SmartQueueManager.m */,
 				E3C07FD81F17A1D50073B723 /* Main.storyboard */,
+				E35C367F1F554697005CC17C /* ClassModel.h */,
+				E35C36801F554697005CC17C /* ClassModel.m */,
 				E3C080431F19C7740073B723 /* cardModel.h */,
 				E3C080441F19C7740073B723 /* cardModel.m */,
-				E35C36791F550E40005CC17C /* NSObject+Description.h */,
-				E35C367A1F550E40005CC17C /* NSObject+Description.m */,
 				E3DBACFE1F1BAAD400F84264 /* guide.png */,
 				E331BB281F1EFA030004B0D1 /* channel_share_guide_finger@2x.png */,
 				E3C07FDB1F17A1D50073B723 /* Assets.xcassets */,
@@ -402,7 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35C367B1F550E40005CC17C /* NSObject+Description.m in Sources */,
+				E35C367E1F55465A005CC17C /* NSObject+Description.m in Sources */,
 				E3C07FD71F17A1D50073B723 /* ViewController.m in Sources */,
 				E3FA46301F20760E00EAF6E7 /* GodOilGuideModelView.m in Sources */,
 				E3C080451F19C7740073B723 /* cardModel.m in Sources */,
@@ -411,6 +416,7 @@
 				E331BB181F1E27DB0004B0D1 /* testFile.m in Sources */,
 				E331BB211F1EE12C0004B0D1 /* HotGiftGuideModelView.m in Sources */,
 				E3C07FD11F17A1D50073B723 /* main.m in Sources */,
+				E35C36811F554697005CC17C /* ClassModel.m in Sources */,
 				E3141EF91F1C4D1400E0C47B /* CrownGuideModelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
