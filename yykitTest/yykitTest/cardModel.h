@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 extern NSString * const ArGiftNotify;
 
 
@@ -19,5 +19,11 @@ extern NSString * const ArGiftNotify;
 @property (nonatomic, copy) NSString *phoneNumber;
 @property (nonatomic, assign) int testNum;
 @property (nonatomic, assign) BOOL isStudent;
+@property (nonatomic, strong) NSData *data;
+@property (nonatomic, strong) NSSet *set;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, assign) CGFloat myFloat;
+@property (nonatomic, assign) CGSize mySize;
+@property (nonatomic, assign) CGRect myRect;
 
 @end

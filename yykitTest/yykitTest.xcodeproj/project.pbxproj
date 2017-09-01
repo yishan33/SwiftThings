@@ -57,12 +57,14 @@
 		E331BB1F1F1EE12C0004B0D1 /* HotGiftGuideModelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotGiftGuideModelView.h; path = ../HotGiftGuideModelView.h; sourceTree = "<group>"; };
 		E331BB201F1EE12C0004B0D1 /* HotGiftGuideModelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotGiftGuideModelView.m; path = ../HotGiftGuideModelView.m; sourceTree = "<group>"; };
 		E331BB281F1EFA030004B0D1 /* channel_share_guide_finger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_share_guide_finger@2x.png"; sourceTree = "<group>"; };
+		E33C56961F5566E4000F2218 /* CustomerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerDefine.h; sourceTree = "<group>"; };
 		E35C367F1F554697005CC17C /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
 		E35C36801F554697005CC17C /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
 		E35C368C1F554CAA005CC17C /* NSObject+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Description.h"; path = "FSBox 15-17-18-851/NSObject+Description.h"; sourceTree = "<group>"; };
 		E35C368D1F554CAA005CC17C /* NSObject+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Description.m"; path = "FSBox 15-17-18-851/NSObject+Description.m"; sourceTree = "<group>"; };
 		E35C368E1F554CAA005CC17C /* SmartQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartQueueManager.h; path = "FSBox 15-17-18-851/SmartQueueManager.h"; sourceTree = "<group>"; };
 		E35C368F1F554CAA005CC17C /* SmartQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmartQueueManager.m; path = "FSBox 15-17-18-851/SmartQueueManager.m"; sourceTree = "<group>"; };
+		E38A6F1F1F58FF1C0074DB4F /* FSTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTestHelper.h; sourceTree = "<group>"; };
 		E3C07FCC1F17A1D50073B723 /* yykitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yykitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C07FD01F17A1D50073B723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3C07FD21F17A1D50073B723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +174,8 @@
 				E35C368D1F554CAA005CC17C /* NSObject+Description.m */,
 				E35C368E1F554CAA005CC17C /* SmartQueueManager.h */,
 				E35C368F1F554CAA005CC17C /* SmartQueueManager.m */,
+				E38A6F1F1F58FF1C0074DB4F /* FSTestHelper.h */,
+				E33C56961F5566E4000F2218 /* CustomerDefine.h */,
 				E386DEA91F21A9A2008C2458 /* GuideView */,
 				E3C07FD21F17A1D50073B723 /* AppDelegate.h */,
 				E3C07FD31F17A1D50073B723 /* AppDelegate.m */,

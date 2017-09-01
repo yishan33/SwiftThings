@@ -17,10 +17,10 @@
 #import "Masonry.h"
 #import "YYKit.h"
 #import "AFHTTPSessionManager.h"
-#import <objc/runtime.h>
 #import "SVProgressHUD.h"
 #import "SmartQueueManager.h"
 #import "ClassModel.h"
+#import "FSTestHelper.h"
 
 
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
@@ -73,11 +73,16 @@ typedef void (^taskEndBLock)();
 //    [self loadModelArray];
 //    self.automaticallyAdjustsScrollViewInsets = NO;
 //    [self loadCollectionView];
-    
-//    [self testDescription];
-    [self testInject];
+    FSTICK;
+    [self testDescription];
+//    [self testInject];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        FSTOCK;
+    });
+//    FSLog(@"documentsPath: %@", DOCUMENTSPATH);
+//    FSLog(@"cachesPath: %@", CACHESPATH);
+//    FSLog(@"tempPath: %@", TEMPPATH);
 }
-
 
 - (void)injected {
     [self viewDidLoad];
@@ -112,13 +117,19 @@ typedef void (^taskEndBLock)();
     testModel.phoneNumber = @"111111";
     testModel.testNum = 1;
     testModel.isStudent = NO;
+    testModel.date = [NSDate date];
+    testModel.data = [@"the Data" dataUsingEncoding:NSUTF8StringEncoding];
+    testModel.myFloat = 12.0f;
+    testModel.mySize = CGSizeMake(11.0f, 12.0f);
+    testModel.myRect = CGRectMake(0, 0, 100, 200);
+    
+    
 
     ClassModel *classOne = [[ClassModel alloc] init];
     classOne.name = @"1班";
     classOne.teachersArray = @[@"John", @"Lucy"];
     
-    NSLog(@"lfs_test: classOne: %@", classOne);
-    NSLog(@"lfs_test: cardModel:%@", testModel);
+    FSLog(@"cardModel:%@", testModel);
 
 }
 
